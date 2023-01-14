@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Tarek Khalifa | Web Developer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/7e33ce6908.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <p><span>T</span>K</p>
+                <ul id="sideMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></li>
+                </ul>
+                <i onclick="openMenu()" class="fa-solid fa-bars"></i>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <p>Full Stack Developer</p>
+            <h1>
+                Hi, I'm <span>Tarek</span> Khalifa <br>
+                I'm your next Full-stack Web Developer
+            </h1>
+        </div>
+    </main>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/profile.png" alt="about">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a Full-stack Web Developer who can build, maintain, optimize websites using php, Laravel,
+                        Angular, WordPress and more.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('internships')">Internships</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div id="skills" class="tab-contents active-tab">
+                        <ul>
+                            <li><span>Front End</span><br>
+                                HTML | CSS | Bootstrap | JavaScript | jQuery | TypeScript | Angular
+                            </li>
+                            <li><span>Back End</span><br>
+                                PHP | Laravel
+                            </li>
+                            <li><span>DataBase</span><br>
+                                SQL | MySQL | MongoDB
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="internships" class="tab-contents">
+                        <ul>
+                            <li><span>Information Technology Institute - ITI Ministry Of Communications</span><br>
+                                Full Stack Development Using PHP</li>
+                            <li><span>Egypt Future Work Digital - FWD powered By Udacity</span><br>
+                                Web Development Track
+                            </li>
+                            <li><span>National Telecommunication Institute - NTI</span><br>
+                                Web Design & Web Development
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="education" class="tab-contents">
+                        <ul>
+                            <li><span>Faculty Of Commerce, Alexandria University</span><br>
+                                Accounting bachelor degree 2014 - 2018
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Development</h2>
+                    <p>I have hands-on experience using modern frameworks like Angular to build engaging, fast-loading,
+                        and user-friendly interfaces across all business domains.</p>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-database"></i>
+                    <h2>Backend Development</h2>
+                    <p>
+                        From database migrations to API integrations to set up the server-side technologies that make an
+                        application work, a backend web developer is a quintessential role that you want to get your
+                        project off the ground.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-file-code"></i>
+                    <h2>Full Stack Development</h2>
+                    <p>
+                        Build interactive, dynamic, and feature-rich web applications leveraging our full-stack
+                        developers' rich technology expertise, including front-end, back-end, server infrastructure, and
+                        more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/images/project-talabat.png" alt="Talabat">
+                    <div class="layer">
+                        <h3>Clone Talabat Web App</h3>
+                        <ul>
+                            <li>ITI Graduation Project</li>
+                            <li>Single Page Application using Angular framework</li>
+                            <li>Admin Dashboard for the website</li>
+                            <li>Admin can Create, Edit and Delete all categories and services</li>
+                            <li>Created an APIS using Laravel framework</li>
+                        </ul>
+                        <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project-clothing-js.png" alt="Ecommerce">
+                    <div class="layer">
+                        <h3>Clothing Web App</h3>
+                        <ul>
+                            <li>Online Shopping Website using JavaScript</li>
+                            <li>Filter products easily</li>
+                            <li>Login or register to complete your order</li>
+                        </ul>
+                        <a href="#"> <i class="fas fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project-blog.jpg" alt="Blog">
+                    <div class="layer">
+                        <h3>Blog Web App</h3>
+                        <ul>
+                            <li>Blog website using Laravel framework</li>
+                            <li>Authors registered by Admin</li>
+                            <li>Authors can insert, update and delete blog</li>
+                            <li>Users can register and comment to blogs</li>
+                        </ul>
+                        <a href="#"> <i class="fas fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" target="_blank" href="https://github.com/tarekmkhalifa">See more</a>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> <a
+                            href="mailto:tarekmkhalifa22@gmail.com">tarekmkhalifa22@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> +201100037060</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Alexandria, Egypt</p>
+                    <div class="scoial-icons">
+                        <a title="Facebook" target="_blank" href="https://www.facebook.com/tarek.khalifa.22">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a title="Twitter" target="_blank" href="https://twitter.com/tarekmkhalifa1">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a title="Instagram" target="_blank" href="https://www.instagram.com/tarekkhalifa">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a title="Linkedin" target="_blank" href="https://www.linkedin.com/in/tarekmkhalifa">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a title="Whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=201100037060">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a title="Whatsapp" target="_blank" href="https://github.com/tarekmkhalifa">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <a class="btn btn-contact" href="assets/docs/my-cv.pdf" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-contact">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button id="topBtn">
+        <i class="fa-regular fa-circle-up"></i>
+    </button>
+    <footer>
+        <p>Copyright &copy; Tarek Khalifa | tarekmkhalifa22@gmail.com</p>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
