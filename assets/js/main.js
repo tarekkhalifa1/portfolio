@@ -24,9 +24,9 @@ for (let link of links) {
     link.addEventListener("click", clickHandler);
 }
 function clickHandler(e) {
-    e.preventDefault();
     const href = this.getAttribute("href");
     if (href != 'index.html') {
+        e.preventDefault();
         const offsetTop = document.querySelector(href).offsetTop;
         scroll({
             top: offsetTop,
@@ -34,14 +34,14 @@ function clickHandler(e) {
     }
 }
 let topBtn = document.getElementById("topBtn");
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 topBtn.addEventListener('click', scrollToUp);
 function scrollFunction() {
-  if (document.documentElement.scrollTop > 180) {
-    topBtn.style.display = "block";
-  } else {
-    topBtn.style.display = "none";
-  }
+    if (document.documentElement.scrollTop > 180) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
 }
 function scrollToUp() {
     scroll({
