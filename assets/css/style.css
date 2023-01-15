@@ -284,7 +284,13 @@ main h1 span {
     font-size: 0.9rem;
 }
 
-.layer a {
+.layer aside {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.layer aside a {
     margin-top: 20px;
     color: #ff004f;
     font-size: 1rem;
